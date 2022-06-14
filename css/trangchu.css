@@ -1,0 +1,82 @@
+body{
+    background-image:url(../img/restaurant-mural-wallpaper_23-2148692632\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.button{
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 300px;
+}
+button{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    color: black;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 153, 0);
+    background-color: yellow;
+    transition: transform .5s;
+    font-size: large;
+    
+}
+button:hover{
+    transform: scale(1.1);
+}
+.container h1{
+    margin-left: -50px;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    font-family: pacifico;
+    
+}
+.container h2{
+    margin-left: -50px;
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+    font-family: pacifico;
+    font-size: 50px;
+    
+}
+
+body{
+    background-repeat: no-repeat;
+}
+
+.glow {
+
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px rgb(255, 0, 0), 0 0 30px 	#FFA500, 0 0 40px 	#8a6f3e, 0 0 50px 	#FFA500, 0 0 60px 	#FFA500, 0 0 70px 	#FFA500;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #202020, 0 0 40px #FF8C00, 0 0 50px 	#FF8C00, 0 0 60px 	#FF8C00, 0 0 70px 	#FF8C00, 0 0 80px 	#FF8C00;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 400px){
+    .button{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 300px;
+        color: #202020;
+    }
+    .glow {
+
+        font-size: 80px;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+}

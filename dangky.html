@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dangnhap.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header style=" z-index: 1; position: fixed; width: 100%;">
+        <nav class="navbar">
+            <a href="#" class="nav-branding">QLFOOD </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./menumon.html" class="nav-link">Đồ ăn</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Drinks.html" class="nav-link">Đồ uống</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./lienhe.html" class="nav-link">Liên hệ</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="form-login" onsubmit="signup()" id="form-1">
+            <h1>Đăng ký</h1>
+            <div class="form-text">
+                <label>Username</label>
+                <input id="username" type="text">
+                <span class="fontmessage"></span>
+            </div>
+            <div class="form-text">
+                <label>Email</label>
+                <input id="email" type="text">
+                <span class="fontmessage"></span>
+            </div>
+            <div class="form-text">
+                <label>Password</label>
+                <input id="password" type="password">
+                <span class="fontmessage"></span>
+            </div>
+            <div class="form-text">
+                <label>Confirm Password</label>
+                <input id="passwordconfirm" type="password">
+                <span class="fontmessage"></span>
+            </div>
+            <button id="btnSignup">Đăng ký</button>
+            <h4 style="text-align: center;">Bạn đã có tài khoản? Đăng nhập <a href="./dangnhap.html">tại đây</a></h4>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+        Vadilator({
+            form: '#form-1',
+            rules:[
+            Vadilator.isRequired('#username'),
+            Vadilator.isEmail('#email')
+            ]
+        });
+    </script>
+</body>
+</html>
